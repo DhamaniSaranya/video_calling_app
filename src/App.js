@@ -9,7 +9,7 @@ import Preview from "./components/Preview";
 import Room from "./components/Room";
 
 const endPoint =
-  "https://prod-in.100ms.live/hmsapi/workshop9jul.app.100ms.live/";
+  "https://prod-in2.100ms.live/hmsapi/coach123.app.100ms.live/";
 
 const getToken = async (user_id) => {
   const response = await fetch(`${endPoint}api/token`, {
@@ -18,7 +18,7 @@ const getToken = async (user_id) => {
       user_id,
       role: "host", //host, teacher, guest, student
       type: "app",
-      room_id: "60e8772442bbd4bd82f23ae6"
+      room_id: "629e9897b873787aa27036c3"
     })
   });
   const { token } = await response.json();
